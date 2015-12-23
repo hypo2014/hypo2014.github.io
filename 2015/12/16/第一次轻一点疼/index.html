@@ -23,7 +23,7 @@ Run server1$ hexo server
 More info: Server
 Generate static files1$ hexo generate
 More info">
-<meta property="og:updated_time" content="2015-12-16T08:21:24.149Z">
+<meta property="og:updated_time" content="2015-12-16T10:26:26.324Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="轻一点疼">
 <meta name="twitter:description" content="这里我的用hexo写的第一篇文章，希望大家会喜欢，因为我准备开始装逼了。
@@ -81,7 +81,7 @@ More info">
         <section id="main"><article id="post-第一次轻一点疼" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/12/16/第一次轻一点疼/" class="article-date">
-  <time datetime="2015-12-16T08:21:24.149Z" itemprop="datePublished">2015-12-16</time>
+  <time datetime="2015-12-16T10:26:26.324Z" itemprop="datePublished">2015-12-16</time>
 </a>
     
   </div>
@@ -108,12 +108,23 @@ More info">
 <h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
 <h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a><br>$ ssh-keygen -t rsa -b 4096 -C “qiuhb_2014@live.com”<br>Generating public/private rsa key pair.<br>Enter file in which to save the key (/c/Users/hgsg02/.ssh/id_rsa):<br>Created directory ‘/c/Users/hgsg02/.ssh’.<br>Enter passphrase (empty for no passphrase):<br>Enter same passphrase again:<br>Passphrases do not match.  Try again.<br>Enter passphrase (empty for no passphrase):<br>Enter same passphrase again:<br>Your identification has been saved in /c/Users/hgsg02/.ssh/id_rsa.<br>Your public key has been saved in /c/Users/hgsg02/.ssh/id_rsa.pub.<br>The key fingerprint is:<br>SHA256:ktmHeCpPxGAXQUJrZiQ5wLi6ccfvfp95CFiYWpDIYfw qiuhb_2014@live.com<br>The key’s randomart image is:<br>+—[RSA 4096]—-+<br>|+++=+o+.         |<br>|.o*ooo .         |<br>| . oB..o         |<br>|.  =E++=..       |<br>|.  . oBoS .      |<br>|o . +..+..       |<br>| + …o  . .     |<br>|.    +. . .o.    |<br>|     o+. .+.     |<br>+—-[SHA256]—–+</p>
+<p>安装中出现两个问题：</p>
+<ol>
+<li>hexo d 失败，查询之后得知需要修改github为git，同时做一个npm install hexo-deployer-git –save</li>
+<li>hexo d 还是失败，找了很久，显示</li>
+</ol>
+<p><code>Run
+git config --global user.email &quot;you@example.com&quot;
+git config --global user.name &quot;Your Name&quot;</code></p>
+<ol>
+<li>在输入一次hexo d 就会弹出账号和密码，输入你的github账号密码就好了</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/16/第一次轻一点疼/" data-id="cii8ndy8o0001agqk6z7l1408" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/16/第一次轻一点疼/" data-id="cii8olywb0001zkqkv0u9l6it" class="article-share-link">Share</a>
       
       
     </footer>
